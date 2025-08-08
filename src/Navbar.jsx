@@ -48,8 +48,11 @@ function Navbar() {
           </a>
 
           {/* Resume */}
+
           <a
-            href="#resume"
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative group hover:text-cyan-300 transition"
           >
             <FaFileAlt />
