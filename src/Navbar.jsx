@@ -6,6 +6,7 @@ import {
   FaFileAlt,
 } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -49,17 +50,15 @@ function Navbar() {
 
           {/* Resume */}
 
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/resume"
             className="relative group hover:text-cyan-300 transition"
           >
             <FaFileAlt />
             <span className="absolute left-1/2 -translate-x-1/2 mt-2 opacity-0 group-hover:opacity-100 transition bg-black/80 border border-cyan-500/30 text-cyan-300 text-xs px-2 py-1 rounded whitespace-nowrap shadow-lg shadow-cyan-500/20">
               Resume
             </span>
-          </a>
+          </Link>
         </div>
 
         {/* Social Icons */}
