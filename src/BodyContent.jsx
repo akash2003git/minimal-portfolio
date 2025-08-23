@@ -190,7 +190,7 @@ export function BodyContent() {
               icon: <FaJsSquare className="text-yellow-300 text-3xl" />,
             },
             {
-              name: "C++",
+              name: "Java",
               icon: <FaJava className="text-blue-400 text-3xl" />,
             },
             {
