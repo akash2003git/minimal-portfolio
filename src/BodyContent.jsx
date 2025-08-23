@@ -5,12 +5,12 @@ import {
   FaNodeJs,
   FaBootstrap,
   FaJsSquare,
+  FaJava,
 } from "react-icons/fa";
 import {
   SiMongodb,
   SiTailwindcss,
   SiExpress,
-  SiCplusplus,
   SiPython,
   SiEjs,
   SiStripe,
@@ -191,7 +191,7 @@ export function BodyContent() {
             },
             {
               name: "C++",
-              icon: <SiCplusplus className="text-blue-400 text-3xl" />,
+              icon: <FaJava className="text-blue-400 text-3xl" />,
             },
             {
               name: "Python",
