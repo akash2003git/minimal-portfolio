@@ -63,6 +63,48 @@ export function BodyContent() {
           // ARCHIVE.DEPLOY
         </h2>
 
+
+        {/* MindVault */}
+        <div className="bg-black/40 border border-cyan-500/30 rounded-lg shadow-lg shadow-cyan-500/10 hover:shadow-cyan-500/40 transition-all p-4 flex flex-col">
+
+          {/* Tech Icons */}
+          <div className="flex gap-2 mb-3 text-cyan-300 text-xl">
+            <SiMongodb /> <SiExpress /> <FaReact /> <FaNodeJs />{" "}
+            <SiTailwindcss />
+          </div>
+
+          <h3 className="text-lg font-semibold text-cyan-300 mb-2">
+            MindVault
+          </h3>
+
+          <p className="text-sm text-gray-300 mb-4">
+            A personal knowledge management app — your second brain to save,
+            organize, and share links, notes, videos, tweets, and ideas.
+            Features include tagging, search, public/private sharing,
+            and JWT-based authentication.
+          </p>
+
+          <div className="flex gap-3 mt-auto">
+            <a
+              href="https://github.com/akash2003git/mindvault"
+              className="flex items-center gap-1 px-3 py-1 bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-sm rounded hover:bg-cyan-500/30"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub /> GitHub
+            </a>
+
+            <a
+              href="https://mindvault-akash.vercel.app/"
+              className="flex items-center gap-1 px-3 py-1 bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-sm rounded hover:bg-cyan-500/30"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaExternalLinkAlt /> Live
+            </a>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Manabu */}
           <div className="bg-black/40 border border-cyan-500/30 rounded-lg shadow-lg shadow-cyan-500/10 hover:shadow-cyan-500/40 transition-all p-4 flex flex-col">
@@ -122,34 +164,6 @@ export function BodyContent() {
             </div>
           </div>
 
-          {/* OverengineeredTodoApp */}
-          <div className="bg-black/40 border border-cyan-500/30 rounded-lg shadow-lg shadow-cyan-500/10 hover:shadow-cyan-500/40 transition-all p-4 flex flex-col">
-            <div className="flex gap-2 mb-3 text-cyan-300 text-xl">
-              <SiMongodb /> <SiExpress /> <FaReact /> <FaNodeJs />{" "}
-              <SiTailwindcss />
-            </div>
-            <h3 className="text-lg font-semibold text-cyan-300 mb-2">
-              OverengineeredTodoApp
-            </h3>
-            <p className="text-sm text-gray-300 mb-4">
-              Full stack todo app built in the MERN stack with Tailwind for
-              styling and Jotai for state management.
-            </p>
-            <div className="flex gap-3 mt-auto">
-              <a
-                href="https://github.com/akash2003git/overengineered-todo-app"
-                className="flex items-center gap-1 px-3 py-1 bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-sm rounded hover:bg-cyan-500/30"
-              >
-                <FaGithub /> GitHub
-              </a>
-              <a
-                href="https://overengineered-todo-app-frontend.onrender.com/"
-                className="flex items-center gap-1 px-3 py-1 bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-sm rounded hover:bg-cyan-500/30"
-              >
-                <FaExternalLinkAlt /> Live
-              </a>
-            </div>
-          </div>
         </div>
       </section>
 
