@@ -12,7 +12,7 @@ function App() {
         <Navbar />
 
         {/* Main content */}
-        <div className="flex-grow pt-20 px-4 sm:pt-24 sm:px-8 lg:pt-28 lg:px-40 2xl:px-80">
+        <div className="flex-grow pt-20 px-4 sm:pt-24 sm:px-8 lg:pt-28 lg:px-50 2xl:px-100">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/resume" element={<Resume />} />

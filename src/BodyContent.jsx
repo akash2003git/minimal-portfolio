@@ -4,7 +4,6 @@ import {
   FaReact,
   FaNodeJs,
   FaBootstrap,
-  FaJsSquare,
   FaJava,
 } from "react-icons/fa";
 import {
@@ -14,6 +13,7 @@ import {
   SiPython,
   SiEjs,
   SiStripe,
+  SiTypescript
 } from "react-icons/si";
 
 export function BodyContent() {
@@ -64,12 +64,16 @@ export function BodyContent() {
         </h2>
 
 
-        {/* MindVault */}
-        <div className="bg-black/40 border border-cyan-500/30 rounded-lg shadow-lg shadow-cyan-500/10 hover:shadow-cyan-500/40 transition-all p-4 flex flex-col">
+        {/* Featured Project: MindVault */}
+        <div className="bg-black/50 border border-cyan-500/40 rounded-lg shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all p-6 flex flex-col">
 
           {/* Tech Icons */}
-          <div className="flex gap-2 mb-3 text-cyan-300 text-xl">
-            <SiMongodb /> <SiExpress /> <FaReact /> <FaNodeJs />{" "}
+          <div className="flex flex-wrap gap-2 mb-4 text-cyan-300 text-xl">
+            <SiMongodb />
+            <SiExpress />
+            <FaReact />
+            <FaNodeJs />
+            <SiTypescript />
             <SiTailwindcss />
           </div>
 
@@ -80,14 +84,14 @@ export function BodyContent() {
           <p className="text-sm text-gray-300 mb-4">
             A personal knowledge management app — your second brain to save,
             organize, and share links, notes, videos, tweets, and ideas.
-            Features include tagging, search, public/private sharing,
-            and JWT-based authentication.
+            Features include tagging, fast search, public/private sharing,
+            JWT-based authentication, and thoughtful UX handling backend cold starts.
           </p>
 
           <div className="flex gap-3 mt-auto">
             <a
               href="https://github.com/akash2003git/mindvault"
-              className="flex items-center gap-1 px-3 py-1 bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-sm rounded hover:bg-cyan-500/30"
+              className="flex items-center gap-1 px-4 py-2 bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-sm rounded hover:bg-cyan-500/30"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -96,7 +100,7 @@ export function BodyContent() {
 
             <a
               href="https://mindvault-akash.vercel.app/"
-              className="flex items-center gap-1 px-3 py-1 bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-sm rounded hover:bg-cyan-500/30"
+              className="flex items-center gap-1 px-4 py-2 bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-sm rounded hover:bg-cyan-500/30"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -164,6 +168,39 @@ export function BodyContent() {
             </div>
           </div>
 
+          {/* OverengineeredTodoApp */}
+
+          <div className="bg-black/40 border border-cyan-500/30 rounded-lg shadow-lg shadow-cyan-500/10 hover:shadow-cyan-500/40 transition-all p-4 flex flex-col">
+            <div className="flex gap-2 mb-3 text-cyan-300 text-xl">
+              <SiMongodb /> <SiExpress /> <FaReact /> <FaNodeJs />{" "}
+              <SiTailwindcss />
+            </div>
+
+            <h3 className="text-lg font-semibold text-cyan-300 mb-2">
+              OverengineeredTodoApp
+            </h3>
+
+            <p className="text-sm text-gray-300 mb-4">
+              Full stack todo app built in the MERN stack with Tailwind for
+              styling and Jotai for state management.
+            </p>
+
+            <div className="flex gap-3 mt-auto">
+              <a
+                href="https://github.com/akash2003git/overengineered-todo-app"
+                className="flex items-center gap-1 px-3 py-1 bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-sm rounded hover:bg-cyan-500/30"
+              >
+                <FaGithub /> GitHub
+              </a>
+              <a
+                href="https://overengineered-todo-app-frontend.onrender.com/"
+                className="flex items-center gap-1 px-3 py-1 bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-sm rounded hover:bg-cyan-500/30"
+              >
+                <FaExternalLinkAlt /> Live
+              </a>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -176,16 +213,28 @@ export function BodyContent() {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
           {[
             {
+              name: "TypeScript",
+              icon: <SiTypescript className="text-cyan-400 text-3xl" />,
+            },
+            {
+              name: "React",
+              icon: <FaReact className="text-cyan-300 text-3xl" />,
+            },
+            {
+              name: "Java",
+              icon: <FaJava className="text-orange-400 text-3xl" />,
+            },
+            {
+              name: "Python",
+              icon: <SiPython className="text-yellow-400 text-3xl" />,
+            },
+            {
               name: "MongoDB",
               icon: <SiMongodb className="text-green-500 text-3xl" />,
             },
             {
               name: "Express",
               icon: <SiExpress className="text-gray-300 text-3xl" />,
-            },
-            {
-              name: "React",
-              icon: <FaReact className="text-cyan-300 text-3xl" />,
             },
             {
               name: "Node.js",
@@ -198,18 +247,6 @@ export function BodyContent() {
             {
               name: "Bootstrap",
               icon: <FaBootstrap className="text-purple-500 text-3xl" />,
-            },
-            {
-              name: "JavaScript",
-              icon: <FaJsSquare className="text-yellow-300 text-3xl" />,
-            },
-            {
-              name: "Java",
-              icon: <FaJava className="text-blue-400 text-3xl" />,
-            },
-            {
-              name: "Python",
-              icon: <SiPython className="text-yellow-400 text-3xl" />,
             },
           ].map((skill) => (
             <div
